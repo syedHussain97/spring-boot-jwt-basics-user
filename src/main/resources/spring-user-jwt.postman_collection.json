@@ -1,0 +1,236 @@
+{
+	"info": {
+		"_postman_id": "a0ce51a6-0612-4074-8c95-f19e4ceb8fc8",
+		"name": "spring-user-jwt",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8082/update-user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJleHAiOjE2MDYyMzE2MTcsInN1YiI6InRlc3QiLCJpYXQiOjE2MDYyMTM2MTd9.hegeVLA1RaGuaqR12-rrIObz2SuQ-PR88CVxqCNWFgqTDCwbNHgHHrhqUv9MMSL5LSUaIKjqcQAv8J1VrkCToQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": 1,\r\n    \"password\": \"passwrod\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/update-user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"update-user"
+					]
+				},
+				"description": "update-user\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8082/delete-user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJleHAiOjE2MDYyMzE2MTcsInN1YiI6InRlc3QiLCJpYXQiOjE2MDYyMTM2MTd9.hegeVLA1RaGuaqR12-rrIObz2SuQ-PR88CVxqCNWFgqTDCwbNHgHHrhqUv9MMSL5LSUaIKjqcQAv8J1VrkCToQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": 1\r\n   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/delete-user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"delete-user"
+					]
+				},
+				"description": "delete user"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8082/hello",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJleHAiOjE2MDYyMzE2MTcsInN1YiI6InRlc3QiLCJpYXQiOjE2MDYyMTM2MTd9.hegeVLA1RaGuaqR12-rrIObz2SuQ-PR88CVxqCNWFgqTDCwbNHgHHrhqUv9MMSL5LSUaIKjqcQAv8J1VrkCToQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"test\",\r\n    \"password\": \"passwrod\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/hello",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"hello"
+					]
+				},
+				"description": "hello"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8082/get-user",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJleHAiOjE2MDYyMzE2MTcsInN1YiI6InRlc3QiLCJpYXQiOjE2MDYyMTM2MTd9.hegeVLA1RaGuaqR12-rrIObz2SuQ-PR88CVxqCNWFgqTDCwbNHgHHrhqUv9MMSL5LSUaIKjqcQAv8J1VrkCToQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"test\",\r\n    \"password\": \"passwrod\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/hello",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"hello"
+					]
+				},
+				"description": "hello"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8082/register",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"test\",\r\n    \"password\": \"passwrod\",\r\n    \"phoneNumber\": \"022-0273395\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"register"
+					]
+				},
+				"description": "register user"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8082/authenticate",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"test\",\r\n    \"password\": \"passwrod\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/authenticate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"authenticate"
+					]
+				},
+				"description": "authenticate"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
