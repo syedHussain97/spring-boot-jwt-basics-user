@@ -62,7 +62,7 @@ public class JwtTokenUtil implements Serializable {
     //3. According to JWS Compact Serialization(https://tools.ietf.org/html/draft-ietf-jose-json-web-signature-41#section-3.1)
     //   compaction of the JWT to a URL-safe string
     private String doGenerateToken(final Map<String, Object> claims, final String subject) {
-
+        //this is a test
         return Jwts.builder()
                 .setClaims(claims)
                 .setSubject(subject)
